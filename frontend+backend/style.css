@@ -1,0 +1,74 @@
+/* Reset some base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: url('heart bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    backdrop-filter: blur(5px);
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgb(96, 4, 4);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* File input and button */
+input[type="file"] {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #e63946;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #d62828;
+}
+
+/* Result section */
+#result {
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    max-width: 90%;
+    text-align: center;
+}
+
+#predictionImage {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
